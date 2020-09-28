@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
-	<Build level="100" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Templar" ascendClassName="Guardian" mainSocketGroup="1" pantheonMinorGod="None" pantheonMajorGod="None" viewMode="CONFIG" banditCruel="None">
+	<Build level="100" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Templar" ascendClassName="Guardian" mainSocketGroup="1" pantheonMinorGod="Gruthkul" pantheonMajorGod="Lunaris" viewMode="SKILLS" banditCruel="None">
 		<PlayerStat stat="AverageHit" value="1000419"/>
 		<PlayerStat stat="AverageDamage" value="1000419"/>
 		<PlayerStat stat="Speed" value="2.0533333333333"/>
@@ -122,7 +122,7 @@
 			<Gem enableGlobal2="false" quality="0" level="18" enableGlobal1="true" skillId="MoltenShell" skillPart="1" gemId="Metadata/Items/Gems/SkillGemMoltenShell" qualityId="Default" enabled="true" nameSpec="Molten Shell" skillMinion="SummonedChaosGolem"/>
 			<Gem enableGlobal2="false" quality="0" level="17" enableGlobal1="true" skillId="EnduringCry" gemId="Metadata/Items/Gems/SkillGemEnduringCry" qualityId="Default" enabled="true" nameSpec="Enduring Cry"/>
 			<Gem enableGlobal2="false" quality="0" level="14" enableGlobal1="true" skillId="SupportCastOnDamageTaken" skillPart="1" gemId="Metadata/Items/Gems/SupportGemCastOnDamageTaken" qualityId="Default" enabled="true" nameSpec="Cast when Damage Taken" skillMinion="SummonedChaosGolem"/>
-			<Gem enableGlobal2="nil" quality="0" level="20" enableGlobal1="true" skillId="SupportIncreasedDuration" gemId="Metadata/Items/Gems/SupportGemIncreasedDuration" qualityId="Default" enabled="true" nameSpec="Increased Duration"/>
+			<Gem enableGlobal2="false" quality="0" level="20" enableGlobal1="true" skillId="SupportIncreasedDuration" gemId="Metadata/Items/Gems/SupportGemIncreasedDuration" qualityId="Default" enabled="true" nameSpec="Increased Duration"/>
 		</Skill>
 		<Skill mainActiveSkillCalcs="1" label="" enabled="true" mainActiveSkill="1">
 			<Gem enableGlobal2="false" quality="0" level="20" enableGlobal1="true" skillId="LeapSlam" skillPart="1" gemId="Metadata/Items/Gems/SkillGemLeapSlam" qualityId="Default" enabled="true" nameSpec="Leap Slam" skillMinion="SummonedPhantasm"/>
@@ -132,9 +132,9 @@
 		</Skill>
 	</Skills>
 	<Tree activeSpec="1">
-		<Spec ascendClassId="3" nodes="7388,39841,3537,23027,6289,63282,37584,11088,35556,1325,32992,58244,27788,21893,24914,34400,44967,47251,39861,23066,61262,401,22473,48287,21835,409,31137,29353,55332,29937,26270,11730,63723,53118,39916,3452,48109,50570,36678,47312,64210,4833,25411,7112,44202,62017,24496,10490,46952,8544,4367,60398,31471,45317,7444,5743,20228,3533,37419,37326,4011,61372,5696,42760,31931,34173,28012,21958,14930,33479,61471,33545,29061,55993,22088,64221,30380,3644,5233,10661,41472,61525,23090,44184,50422,57279,13164,18033,41251,28574,14936,57539,40362,5823,15064,46092,9877,25058,56143,58218,29199,13885,32364,65108,9355,47471,20528,16544,55146,36949,7374,35737,59928,6712,44908,10031,39728,11397,54629,51786,49978,25260,26866,56158,55676,42264,55866,42443,33287,63447,24083,39678,60090" treeVersion="3_12" classId="5">
+		<Spec ascendClassId="3" nodes="7388,39841,3537,23027,6289,63282,37584,11088,35556,1325,32992,58244,27788,21893,24914,34400,44967,47251,39861,23066,61262,401,22473,48287,21835,56158,31137,29353,55332,29937,26270,6712,59928,53118,39916,3452,48109,36949,42443,47312,58218,4833,44908,7112,44202,62017,24496,10490,46952,8544,4367,60398,31471,45317,7444,5743,20228,3533,37419,37326,4011,61372,5696,42760,25260,34173,28012,21958,14930,33479,61471,33545,29061,55993,22088,42264,35737,26866,49978,10661,60090,31931,24083,44184,63447,33287,50422,30380,56143,25411,14936,57539,9877,5233,15064,41472,23090,18033,64210,36678,29199,13885,39728,65108,9355,47471,50570,16544,41251,28574,5823,63723,11730,40362,46092,10031,25058,11397,54629,51786,13164,57279,32364,3644,55676,409,55866,20528,64221,55146,7374,39678,61525" treeVersion="3_12" classId="5">
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAUDABzcm6EN0VnzGJH3MpLQK1CK5AUtgODjhGyMVYVhUoZgr6e4k5u1WhrvTgGRV8m8n1VLeaFyqdgkdPFmni3S-OvPfpvsDXy77cWKj0a40PrSEuFjQxvIrKryQV-wKPq3aCFgEQ_r7nrvsQUdFBZvTwQNzZIrkc4Pq--8FkCnCHy7hX1tbFXGOlKCx_Afgwlxhdq5Vkj63XasDjwUcSmlogBaMqyYxPbfvzNsRnGhI2-eOljgw52qFr862LQMJpVh4ttP42pyDzY9fmz-VCSLuW9QMECg12qQVRzOi5nqGBo4r2wnL5swLIXVZcpKwzpirGjy217ZfKUY2jqly4IH99deE5r-6ro=
+				https://www.pathofexile.com/passive-skill-tree/AAAABAUDABzcm6EN0VnzGJH3MpLQK1CK5AUtgODjhGyMVYVhUoZgr6e4k5u1WhrvTgGRV8m8n1VL2155oXKp2CR08WaeGjjqGM9-m-wNfLvtkFWly7jQ42oS4a9sG8isqvJBX7Ao-rdoIWARD-vueu-xBR0UFm9PBA3NkiuRzg-r77wWQKcIYqyFfW1sVcY6UoLH8B-DCXGF2rlWSKUYi5lo8sM6KaXquny7XhOsmPfXggfE9nas209jQzpY4MMmlRRxOtiiAFoyRnH60o9Gcg82PZsw_lQki7lvxYpAoKEjb54Wv_jrLdKdqrQMJy9h4iyF1WXKSjNs379-bA482XzaOlAw-t3XahzOmv4=
 			</URL>
 			<Sockets>
 				<Socket nodeId="16218" itemId="0"/>
@@ -146,61 +146,61 @@
 				<Socket nodeId="2311" itemId="0"/>
 				<Socket nodeId="9408" itemId="0"/>
 				<Socket nodeId="36634" itemId="1"/>
-				<Socket nodeId="61305" itemId="0"/>
+				<Socket nodeId="29712" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="2491" itemId="0"/>
 				<Socket nodeId="33753" itemId="0"/>
 				<Socket nodeId="60735" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
+				<Socket nodeId="32763" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
-				<Socket nodeId="23756" itemId="0"/>
-				<Socket nodeId="64583" itemId="0"/>
-				<Socket nodeId="12613" itemId="0"/>
-				<Socket nodeId="13170" itemId="0"/>
-				<Socket nodeId="46519" itemId="0"/>
-				<Socket nodeId="33631" itemId="0"/>
-				<Socket nodeId="40400" itemId="0"/>
-				<Socket nodeId="3109" itemId="0"/>
 				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="23756" itemId="0"/>
+				<Socket nodeId="22994" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="46519" itemId="0"/>
+				<Socket nodeId="40400" itemId="0"/>
+				<Socket nodeId="10532" itemId="0"/>
+				<Socket nodeId="3109" itemId="0"/>
+				<Socket nodeId="26725" itemId="0"/>
 				<Socket nodeId="46393" itemId="0"/>
 				<Socket nodeId="7960" itemId="0"/>
 				<Socket nodeId="59585" itemId="0"/>
 				<Socket nodeId="14993" itemId="0"/>
-				<Socket nodeId="12161" itemId="0"/>
+				<Socket nodeId="41876" itemId="0"/>
 				<Socket nodeId="9797" itemId="0"/>
-				<Socket nodeId="29712" itemId="0"/>
+				<Socket nodeId="61305" itemId="0"/>
 				<Socket nodeId="26196" itemId="0"/>
-				<Socket nodeId="61288" itemId="0"/>
 				<Socket nodeId="49080" itemId="0"/>
-				<Socket nodeId="18436" itemId="0"/>
+				<Socket nodeId="61288" itemId="0"/>
+				<Socket nodeId="54127" itemId="0"/>
 				<Socket nodeId="33989" itemId="0"/>
-				<Socket nodeId="61419" itemId="0"/>
+				<Socket nodeId="46882" itemId="0"/>
 				<Socket nodeId="17219" itemId="0"/>
 				<Socket nodeId="23984" itemId="0"/>
-				<Socket nodeId="22748" itemId="0"/>
-				<Socket nodeId="44169" itemId="0"/>
-				<Socket nodeId="61666" itemId="0"/>
-				<Socket nodeId="28475" itemId="0"/>
 				<Socket nodeId="41263" itemId="0"/>
-				<Socket nodeId="46882" itemId="0"/>
-				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="61419" itemId="0"/>
+				<Socket nodeId="22748" itemId="0"/>
+				<Socket nodeId="28475" itemId="0"/>
+				<Socket nodeId="61666" itemId="0"/>
+				<Socket nodeId="44169" itemId="0"/>
+				<Socket nodeId="18436" itemId="0"/>
 				<Socket nodeId="49684" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="41876" itemId="0"/>
-				<Socket nodeId="26725" itemId="0"/>
-				<Socket nodeId="10532" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
-				<Socket nodeId="22994" itemId="0"/>
+				<Socket nodeId="12161" itemId="0"/>
+				<Socket nodeId="64583" itemId="0"/>
+				<Socket nodeId="33631" itemId="0"/>
+				<Socket nodeId="13170" itemId="0"/>
+				<Socket nodeId="12613" itemId="0"/>
 				<Socket nodeId="36931" itemId="0"/>
 				<Socket nodeId="6910" itemId="0"/>
-				<Socket nodeId="32763" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
 			</Sockets>
 		</Spec>
 	</Tree>
 	<Notes>
 		
 	</Notes>
-	<TreeView searchStr="" zoomY="-326.74406365455" showHeatMap="false" zoomLevel="5" showStatDifferences="true" zoomX="60.084660650431"/>
+	<TreeView searchStr="" zoomY="80.648812899959" showHeatMap="false" zoomLevel="2" showStatDifferences="true" zoomX="-126.41337153717"/>
 	<Items activeItemSet="1" useSecondWeaponSet="false">
 		<Item id="1">
 			Rarity: UNIQUE
