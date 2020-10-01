@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PathOfBuilding>
-	<Build level="100" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="1" pantheonMinorGod="None" pantheonMajorGod="None" viewMode="ITEMS" banditCruel="None">
-		<PlayerStat stat="ActiveMinionLimit" value="20"/>
+	<Build level="100" targetVersion="3_0" banditNormal="None" bandit="None" banditMerciless="None" className="Witch" ascendClassName="Necromancer" mainSocketGroup="2" pantheonMinorGod="None" pantheonMajorGod="None" viewMode="TREE" banditCruel="None">
 		<PlayerStat stat="AverageHit" value="0"/>
 		<PlayerStat stat="AverageDamage" value="0"/>
-		<PlayerStat stat="Speed" value="2"/>
-		<PlayerStat stat="Speed" value="2"/>
-		<PlayerStat stat="Speed" value="2"/>
+		<PlayerStat stat="Speed" value="0"/>
+		<PlayerStat stat="Speed" value="0"/>
+		<PlayerStat stat="Speed" value="0"/>
 		<PlayerStat stat="PreEffectiveCritChance" value="0"/>
 		<PlayerStat stat="CritChance" value="0"/>
 		<PlayerStat stat="CritMultiplier" value="1.5"/>
@@ -17,11 +16,13 @@
 		<PlayerStat stat="TotalDotDPS" value="0"/>
 		<PlayerStat stat="CombinedDPS" value="0"/>
 		<PlayerStat stat="CombinedAvg" value="0"/>
-		<PlayerStat stat="ManaCost" value="40"/>
+		<PlayerStat stat="Cooldown" value="1.2"/>
+		<PlayerStat stat="AreaOfEffectRadius" value="70"/>
+		<PlayerStat stat="ManaCost" value="50"/>
 		<PlayerStat stat="Str" value="34"/>
 		<PlayerStat stat="ReqStr" value="113"/>
 		<PlayerStat stat="Dex" value="64"/>
-		<PlayerStat stat="ReqDex" value="0"/>
+		<PlayerStat stat="ReqDex" value="68"/>
 		<PlayerStat stat="Int" value="407"/>
 		<PlayerStat stat="ReqInt" value="155"/>
 		<PlayerStat stat="Devotion" value="0"/>
@@ -33,8 +34,8 @@
 		<PlayerStat stat="LifeLeechGainRate" value="0"/>
 		<PlayerStat stat="Mana" value="1604"/>
 		<PlayerStat stat="Spec:ManaInc" value="87"/>
-		<PlayerStat stat="ManaUnreserved" value="1604"/>
-		<PlayerStat stat="ManaUnreservedPercent" value="100"/>
+		<PlayerStat stat="ManaUnreserved" value="978"/>
+		<PlayerStat stat="ManaUnreservedPercent" value="60.972568578554"/>
 		<PlayerStat stat="ManaRegen" value="35.1"/>
 		<PlayerStat stat="ManaLeechGainRate" value="0"/>
 		<PlayerStat stat="EnergyShield" value="378"/>
@@ -68,18 +69,6 @@
 		<PlayerStat stat="FrenzyChargesMax" value="3"/>
 		<PlayerStat stat="EnduranceCharges" value="0"/>
 		<PlayerStat stat="EnduranceChargesMax" value="3"/>
-		<PlayerStat stat="ActiveMinionLimit" value="20"/>
-		<MinionStat stat="AverageDamage" value="258436"/>
-		<MinionStat stat="Speed" value="1.36"/>
-		<MinionStat stat="TotalDPS" value="351472.96"/>
-		<MinionStat stat="TotalDot" value="0"/>
-		<MinionStat stat="IgniteDPS" value="41908.5"/>
-		<MinionStat stat="WithPoisonDPS" value="258436"/>
-		<MinionStat stat="CombinedDPS" value="300344.5"/>
-		<MinionStat stat="Life" value="33364"/>
-		<MinionStat stat="LifeRegen" value="1000.92"/>
-		<MinionStat stat="EnergyShield" value="0"/>
-		<MinionStat stat="EnergyShieldRegen" value="0"/>
 	</Build>
 	<Import/>
 	<Calcs>
@@ -122,11 +111,17 @@
 			<Gem enableGlobal2="false" quality="0" level="20" enableGlobal1="true" skillId="SupportMinionDamage" gemId="Metadata/Items/Gems/SupportGemMinionDamage" qualityId="Default" enabled="true" nameSpec="Minion Damage"/>
 			<Gem enableGlobal2="false" quality="0" level="20" enableGlobal1="true" skillId="SupportConcentratedEffect" gemId="Metadata/Items/Gems/SupportGemConcentratedEffect" qualityId="Default" enabled="true" nameSpec="Concentrated Effect"/>
 		</Skill>
+		<Skill mainActiveSkillCalcs="1" label="" enabled="true" mainActiveSkill="1">
+			<Gem enableGlobal2="false" quality="0" level="20" enableGlobal1="true" skillId="DamageOverTimeAura" gemId="Metadata/Items/Gems/SkillGemDamageOverTimeAura" qualityId="Default" enabled="true" nameSpec="Malevolence"/>
+			<Gem enableGlobal2="false" quality="0" level="20" enableGlobal1="true" skillId="SupportGenerosity" gemId="Metadata/Items/Gems/SupportGemGenerosity" qualityId="Default" enabled="true" nameSpec="Generosity"/>
+		</Skill>
+		<Skill mainActiveSkillCalcs="1" label="" enabled="true" mainActiveSkill="1"/>
 	</Skills>
 	<Tree activeSpec="1">
-		<Spec ascendClassId="3" nodes="25222,39841,38701,54447,48713,27656,9650,26481,41635,63447,27788,42795,30658,60259,61320,44360,12143,61419,41263,40637,5415,22473,18767,55646,18769,60791,51923,60440,55247,47362,48778,32710,40362,22062,52412,1031,41989,35685,10904,3452,9370,60547,13009,36678,17412,64210,25409,18182,29171,7112,14603,10490,49651,60398,37671,12250,7444,19103,57565,65097,57226,48298,27203,18033,7688,42760,27659,5935,18663,36915,51517,49605,59650,6685,60554,18359,29381,31875,31103,35702,35958,7898,11455,18865,61834,46092,34880,36858,46897,44184,54159,19897,53213,27929,49047,8948,23659,32024,2292,44788,26270,13885,14936,41190,56295,21974,55571,18309,32176,34306,7594,50029,15081,4247,25831,63799,53279,33864,53456,27611,36017,33755,17735,4432,19635,28859,57736,61653,65153,2348,32932,21958,60090" treeVersion="3_12" classId="3">
+		<Spec ascendClassId="3" nodes="25222,39841,38701,54447,48713,27656,9650,26481,41635,63447,27788,42795,57736,49047,61320,44360,12143,61419,41263,40637,5415,22473,18767,55646,18769,60791,51923,60440,55247,47362,48778,32710,40362,22062,52412,1031,41989,35685,10904,3452,9370,60547,13009,36678,17412,64210,25409,18182,29171,7112,14603,10490,49651,60398,37671,12250,7444,19103,57565,65097,57226,48298,56295,4432,7688,42760,27659,5935,18663,36915,51517,49605,59650,6685,60554,18359,29381,31875,31103,35702,35958,7898,11455,18865,61834,46092,34880,36858,46897,44184,54159,19897,53213,14936,28859,18033,23659,30658,53456,33755,61653,13885,26270,41190,2348,21974,55571,18309,32932,34306,7594,50029,32176,21958,25831,63799,53279,33864,15081,27611,36017,27929,17735,2292,4247,60090,19635,32024,65153,8948,60259,44788,27203" treeVersion="3_12" classId="3">
+			<EditedNodes/>
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDAGKGm6GXLb5JbAglsmdxoqP312yMpyt3wutj74itSC9v7-uhL569FSdXyUlP2V5JUcrT7BjXz7kCvop_xp2qVi7MvAQHpAWLZSqYDXwkmuyDMtGPRkQE-tJjQUcGcfMbyDkLKPrB8-vukycv2h0USp_g3f5J34q8qmpDRnEeCKcIbAsXL0jnkDPJPcHF6QIaHeyKR7dyxXyDeX-Ldox2Htosv0mx8Yq0DIhAj_q3MayY049Nuc_dbRm_lyL0XGt9GAj0rvRmnjY9Olig5tvnVdbZE0eFfbCGAh2qw2066RCXZOf5N9AfhEjQ0GvbjLGD20VHEVBMs3C74Yjw1f6BCSyApFXG6ro=
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDAGKGm6GXLb5JbAglsmdxoqP312yMpyvhiL-X74itSC9v7-uhL569FSdXyUlP2V5JUcrT7BjXz7kCvop_xp2qVi7MvAQHpAWLZSqYDXwkmuyDMtGPRkQE-tJjQUcGcfMbyDkLKPrB8-vukycv2h0USp_g3f5J34q8qtvnEVAeCKcIbAsXL0jnkDPJPcHF6QIaHeyKR7dyxXyDeX-Ldox2Htosv0mx8Yq0DIhAj_q3MayY049Nuc_dOlhwu0ZxXGt3wtDQg9vw1TY9Zp6g5gksVdbZE0eFgKSGAh2qw219sFXGZOf5N9AfhEg66WvbjLFtGUVHCPQQl-q6TLN9GP6BIvTrY670akM=
 			</URL>
 			<Sockets>
 				<Socket nodeId="16218" itemId="0"/>
@@ -138,61 +133,61 @@
 				<Socket nodeId="2311" itemId="0"/>
 				<Socket nodeId="9408" itemId="0"/>
 				<Socket nodeId="36634" itemId="0"/>
-				<Socket nodeId="29712" itemId="0"/>
+				<Socket nodeId="61305" itemId="0"/>
 				<Socket nodeId="21984" itemId="0"/>
-				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="2491" itemId="0"/>
 				<Socket nodeId="54127" itemId="0"/>
+				<Socket nodeId="18436" itemId="0"/>
 				<Socket nodeId="31683" itemId="0"/>
-				<Socket nodeId="13170" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
-				<Socket nodeId="14993" itemId="0"/>
-				<Socket nodeId="33753" itemId="0"/>
+				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
 				<Socket nodeId="9797" itemId="0"/>
 				<Socket nodeId="7960" itemId="0"/>
 				<Socket nodeId="46519" itemId="0"/>
-				<Socket nodeId="40400" itemId="0"/>
 				<Socket nodeId="33631" itemId="0"/>
+				<Socket nodeId="40400" itemId="0"/>
 				<Socket nodeId="3109" itemId="0"/>
-				<Socket nodeId="60735" itemId="0"/>
+				<Socket nodeId="33753" itemId="0"/>
 				<Socket nodeId="46393" itemId="0"/>
 				<Socket nodeId="23756" itemId="0"/>
 				<Socket nodeId="59585" itemId="0"/>
 				<Socket nodeId="32763" itemId="0"/>
 				<Socket nodeId="12161" itemId="0"/>
-				<Socket nodeId="28475" itemId="0"/>
-				<Socket nodeId="18436" itemId="0"/>
+				<Socket nodeId="13170" itemId="0"/>
+				<Socket nodeId="29712" itemId="0"/>
 				<Socket nodeId="26196" itemId="2"/>
 				<Socket nodeId="61288" itemId="0"/>
 				<Socket nodeId="49080" itemId="0"/>
 				<Socket nodeId="24970" itemId="0"/>
 				<Socket nodeId="33989" itemId="0"/>
-				<Socket nodeId="46882" itemId="0"/>
-				<Socket nodeId="17219" itemId="0"/>
 				<Socket nodeId="23984" itemId="0"/>
+				<Socket nodeId="17219" itemId="0"/>
+				<Socket nodeId="46882" itemId="0"/>
+				<Socket nodeId="22748" itemId="0"/>
+				<Socket nodeId="44169" itemId="0"/>
+				<Socket nodeId="41263" itemId="2"/>
+				<Socket nodeId="51198" itemId="0"/>
 				<Socket nodeId="61666" itemId="0"/>
 				<Socket nodeId="61419" itemId="2"/>
-				<Socket nodeId="22748" itemId="0"/>
-				<Socket nodeId="51198" itemId="0"/>
-				<Socket nodeId="41263" itemId="2"/>
-				<Socket nodeId="44169" itemId="0"/>
 				<Socket nodeId="10532" itemId="0"/>
 				<Socket nodeId="49684" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
 				<Socket nodeId="41876" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
-				<Socket nodeId="2491" itemId="0"/>
+				<Socket nodeId="14993" itemId="0"/>
 				<Socket nodeId="12613" itemId="0"/>
 				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="60735" itemId="0"/>
 				<Socket nodeId="36931" itemId="0"/>
 				<Socket nodeId="6910" itemId="0"/>
-				<Socket nodeId="61305" itemId="0"/>
+				<Socket nodeId="28475" itemId="0"/>
 			</Sockets>
 		</Spec>
 	</Tree>
 	<Notes>
 		
 	</Notes>
-	<TreeView searchStr="" zoomY="262.56275031702" showHeatMap="false" zoomLevel="9" showStatDifferences="true" zoomX="-49.587168734808"/>
+	<TreeView searchStr="" zoomY="1581.1753739062" showHeatMap="false" zoomLevel="8" showStatDifferences="true" zoomX="-55.925436661723"/>
 	<Items activeItemSet="1" useSecondWeaponSet="false">
 		<Item id="1">
 			Rarity: UNIQUE
