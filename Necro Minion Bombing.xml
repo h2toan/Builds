@@ -18,9 +18,9 @@
 		<PlayerStat stat="TotalDotDPS" value="0"/>
 		<PlayerStat stat="CombinedDPS" value="0"/>
 		<PlayerStat stat="CombinedAvg" value="0"/>
-		<PlayerStat stat="ManaCost" value="102"/>
+		<PlayerStat stat="ManaCost" value="79"/>
 		<PlayerStat stat="Str" value="64"/>
-		<PlayerStat stat="ReqStr" value="111"/>
+		<PlayerStat stat="ReqStr" value="70"/>
 		<PlayerStat stat="Dex" value="64"/>
 		<PlayerStat stat="ReqDex" value="98"/>
 		<PlayerStat stat="Int" value="407"/>
@@ -70,12 +70,12 @@
 		<PlayerStat stat="EnduranceCharges" value="0"/>
 		<PlayerStat stat="EnduranceChargesMax" value="3"/>
 		<PlayerStat stat="ActiveMinionLimit" value="3"/>
-		<MinionStat stat="AverageDamage" value="9034.452221516"/>
+		<MinionStat stat="AverageDamage" value="6649.1503649661"/>
 		<MinionStat stat="Speed" value="1.554613365637"/>
-		<MinionStat stat="TotalDPS" value="14045.080174778"/>
+		<MinionStat stat="TotalDPS" value="10336.858027506"/>
 		<MinionStat stat="TotalDot" value="0"/>
-		<MinionStat stat="WithPoisonDPS" value="14045.080174778"/>
-		<MinionStat stat="CombinedDPS" value="14045.080174778"/>
+		<MinionStat stat="WithPoisonDPS" value="10336.858027506"/>
+		<MinionStat stat="CombinedDPS" value="10336.858027506"/>
 		<MinionStat stat="Life" value="113006"/>
 		<MinionStat stat="LifeRegen" value="3390.18"/>
 		<MinionStat stat="LifeLeechGainRate" value="0"/>
@@ -143,8 +143,8 @@
 		<Skill mainActiveSkillCalcs="1" label="Spec 4L" enabled="true" mainActiveSkill="1">
 			<Gem enableGlobal2="false" skillMinionSkillCalcs="2" skillMinionCalcs="Metadata/Monsters/BloodChieftain/MonkeyChiefBloodEnrage" quality="0" level="20" enableGlobal1="true" skillId="RaiseSpectre" skillMinionSkill="1" skillPart="1" gemId="Metadata/Items/Gems/SkillGemRaiseSpectre" qualityId="Default" enabled="true" nameSpec="Raise Spectre" skillMinion="Metadata/Monsters/BloodChieftain/MonkeyChiefBloodEnrage"/>
 			<Gem enableGlobal2="false" quality="0" level="1" enableGlobal1="true" skillId="SupportBloodMagic" skillPart="1" gemId="Metadata/Items/Gems/SupportGemBloodMagic" qualityId="Default" enabled="true" nameSpec="Blood Magic"/>
-			<Gem enableGlobal2="nil" quality="0" level="20" enableGlobal1="true" skillId="SupportMinionLife" skillPart="1" gemId="Metadata/Items/Gems/SupportGemMinionLife" qualityId="Default" enabled="true" nameSpec="Minion Life"/>
-			<Gem enableGlobal2="nil" quality="0" level="20" enableGlobal1="true" skillId="SupportFortify" gemId="Metadata/Items/Gems/SupportGemFortify" qualityId="Default" enabled="true" nameSpec="Fortify"/>
+			<Gem enableGlobal2="false" quality="0" level="20" enableGlobal1="true" skillId="SupportMinionLife" skillPart="1" gemId="Metadata/Items/Gems/SupportGemMinionLife" qualityId="Default" enabled="true" nameSpec="Minion Life"/>
+			<Gem enableGlobal2="nil" skillMinionSkillCalcs="1" quality="0" level="20" enableGlobal1="true" skillId="SummonBoneGolem" skillMinionSkill="1" gemId="Metadata/Items/Gems/SkillGemSummonCarrionGolem" qualityId="Default" enabled="true" nameSpec="Summon Carrion Golem" skillMinion="SummonedCarrionGolem"/>
 		</Skill>
 		<Skill mainActiveSkillCalcs="1" label="Curse 4L" enabled="true" mainActiveSkill="1">
 			<Gem enableGlobal2="false" quality="0" level="20" enableGlobal1="true" skillId="BallLightning" skillPart="1" gemId="Metadata/Items/Gems/SkillGemBallLightning" qualityId="Default" enabled="true" nameSpec="Ball Lightning" skillMinion="SummonedPhantasm"/>
@@ -154,10 +154,10 @@
 		</Skill>
 	</Skills>
 	<Tree activeSpec="1">
-		<Spec ascendClassId="3" nodes="25222,39841,2292,23027,9392,27656,9650,26481,41635,63447,27788,42795,57736,60259,61320,44360,12143,61419,41263,40637,5415,22473,55646,18769,60791,51923,60440,55247,47362,48778,32710,26270,22062,6712,52412,1031,41989,10904,3452,9370,60547,13009,36949,36678,17412,64210,25409,18182,29171,7112,14603,10490,49651,60398,37671,44788,7444,28859,57565,65097,32024,27203,4432,7688,61653,27659,5935,18663,36915,51517,49605,59650,6685,60554,18359,29381,31875,31103,35702,35958,19635,11455,18865,61834,46092,34880,36858,46897,44184,54159,19897,53213,33755,14936,56295,26196,23659,37999,57226,30658,29199,13885,49047,41190,15081,32176,4247,18309,23950,34306,7594,50029,61982,27929,21958,63799,53279,33864,18033,27611,36017,42760,17735,40362,8948,2348,32932,55571,65153,19103,60090,53456,54447" treeVersion="3_12" classId="3">
+		<Spec ascendClassId="3" nodes="25222,39841,54447,23027,9392,27656,9650,26481,41635,63447,27788,42795,57736,8948,61320,44360,12143,61419,41263,40637,5415,22473,55646,18769,60791,51923,60440,55247,47362,48778,32710,40362,22062,6712,52412,1031,41989,10904,3452,9370,60547,13009,36949,15081,17412,64210,25409,18182,29171,7112,14603,10490,49651,60398,37671,44788,7444,28859,57565,65097,32024,27203,4432,7688,42760,27659,5935,18663,36915,51517,49605,32932,21958,60554,18359,29381,31875,31103,35702,35958,19635,11455,18865,61834,46092,34880,36858,46897,44184,54159,19897,53213,27929,53456,60090,19103,23659,33755,55571,2292,29199,13885,61653,2348,30658,37999,4247,23950,36678,34306,7594,50029,32176,18309,61982,63799,53279,33864,56295,27611,36017,57226,17735,26196,26270,49047,41190,14936,65153,60259,6685,59650,18033" treeVersion="3_12" classId="3">
 			<EditedNodes/>
 			<URL>
-				https://www.pathofexile.com/passive-skill-tree/AAAABAMDAGKGm6EI9FnzJLBsCCWyZ3Gio_fXbIynK-GI62PviK1IL2_v66Evnr0VJ1fJ2V5JUcrT7BjXz7kCvop_xmaeVi4aOMy8BAekBSqYDXwkmuyDMtGQVY9GRAT60mNBRwZx8xvIOQso-sHz6-6TJ670HRRwu-Dd_kl9GGpDEVAeCPDVbAsXL0jnkDPJPcHF6QIaHeyKR7dyxXyDeX-Ldox2TLMsv0mx8Yq0DIhAj_q3MayY049Nuc_dg9s6WNvnZlRca5Rv34p3wnIPNj2_l6DmOul9sBCXR4VdjoYCHarDbfIebRlVxvk30B-ESEZxa9uMsacIRUedqiL0CSyApNkT_oFKn-q60NA=
+				https://www.pathofexile.com/passive-skill-tree/AAAABAMDAGKGm6FZ8ySwbAglsmdxoqP312yMpyvhiCL074itSC9v7-uhL569FSdXydleSVHK0-wY18-5Ar6Kf8adqlYuGjjMvAQHpAUqmA18JJrsgzLRkFU66UQE-tJjQUcGcfMbyDkLKPrB8-vukyeu9B0UcLvg3f5JfRhqQxFQHginCGwLFy9I55AzyT3BxYCkVcbsike3csV8g3l_i3aMdkyzLL9JsfGKtAyIQI_6tzGsmNOPTbnP3W0Z0NDqukqfXGuD29kTCPRyDzY98NUJLHfClG8Ql12Oj0aGAh2qw219sEeF8h75N9AfhEjb52vbjLHfikVHZlRmnr-XoOY6WP6B62MaHekCRnE=
 			</URL>
 			<Sockets>
 				<Socket nodeId="16218" itemId="0"/>
@@ -169,54 +169,54 @@
 				<Socket nodeId="2311" itemId="0"/>
 				<Socket nodeId="9408" itemId="0"/>
 				<Socket nodeId="36634" itemId="0"/>
-				<Socket nodeId="61305" itemId="0"/>
-				<Socket nodeId="21984" itemId="0"/>
+				<Socket nodeId="29712" itemId="0"/>
+				<Socket nodeId="12613" itemId="0"/>
 				<Socket nodeId="2491" itemId="0"/>
 				<Socket nodeId="54127" itemId="0"/>
-				<Socket nodeId="18436" itemId="0"/>
-				<Socket nodeId="12613" itemId="0"/>
+				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="13170" itemId="0"/>
 				<Socket nodeId="55190" itemId="0"/>
-				<Socket nodeId="34483" itemId="0"/>
-				<Socket nodeId="31683" itemId="0"/>
-				<Socket nodeId="33753" itemId="0"/>
-				<Socket nodeId="60735" itemId="0"/>
+				<Socket nodeId="18436" itemId="0"/>
+				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="9797" itemId="0"/>
+				<Socket nodeId="7960" itemId="5"/>
 				<Socket nodeId="46519" itemId="0"/>
 				<Socket nodeId="33631" itemId="0"/>
-				<Socket nodeId="6230" itemId="0"/>
+				<Socket nodeId="40400" itemId="0"/>
 				<Socket nodeId="3109" itemId="0"/>
-				<Socket nodeId="26725" itemId="0"/>
+				<Socket nodeId="14993" itemId="0"/>
 				<Socket nodeId="46393" itemId="0"/>
 				<Socket nodeId="23756" itemId="0"/>
 				<Socket nodeId="59585" itemId="0"/>
 				<Socket nodeId="32763" itemId="0"/>
-				<Socket nodeId="41876" itemId="0"/>
+				<Socket nodeId="12161" itemId="0"/>
 				<Socket nodeId="28475" itemId="0"/>
-				<Socket nodeId="29712" itemId="0"/>
+				<Socket nodeId="21984" itemId="0"/>
 				<Socket nodeId="26196" itemId="2"/>
-				<Socket nodeId="49080" itemId="0"/>
 				<Socket nodeId="61288" itemId="0"/>
-				<Socket nodeId="10532" itemId="0"/>
+				<Socket nodeId="49080" itemId="0"/>
+				<Socket nodeId="24970" itemId="0"/>
 				<Socket nodeId="33989" itemId="0"/>
-				<Socket nodeId="44169" itemId="0"/>
+				<Socket nodeId="23984" itemId="0"/>
 				<Socket nodeId="17219" itemId="0"/>
 				<Socket nodeId="46882" itemId="0"/>
-				<Socket nodeId="22748" itemId="0"/>
-				<Socket nodeId="61419" itemId="2"/>
-				<Socket nodeId="41263" itemId="2"/>
-				<Socket nodeId="51198" itemId="0"/>
 				<Socket nodeId="61666" itemId="0"/>
-				<Socket nodeId="23984" itemId="0"/>
-				<Socket nodeId="24970" itemId="0"/>
+				<Socket nodeId="44169" itemId="0"/>
+				<Socket nodeId="22748" itemId="0"/>
+				<Socket nodeId="51198" itemId="0"/>
+				<Socket nodeId="41263" itemId="2"/>
+				<Socket nodeId="61419" itemId="2"/>
+				<Socket nodeId="10532" itemId="0"/>
 				<Socket nodeId="49684" itemId="0"/>
 				<Socket nodeId="48768" itemId="0"/>
-				<Socket nodeId="12161" itemId="0"/>
-				<Socket nodeId="14993" itemId="0"/>
-				<Socket nodeId="40400" itemId="0"/>
-				<Socket nodeId="7960" itemId="5"/>
-				<Socket nodeId="9797" itemId="0"/>
+				<Socket nodeId="41876" itemId="0"/>
+				<Socket nodeId="31683" itemId="0"/>
+				<Socket nodeId="60735" itemId="0"/>
+				<Socket nodeId="33753" itemId="0"/>
+				<Socket nodeId="34483" itemId="0"/>
 				<Socket nodeId="36931" itemId="0"/>
 				<Socket nodeId="6910" itemId="0"/>
-				<Socket nodeId="13170" itemId="0"/>
+				<Socket nodeId="61305" itemId="0"/>
 			</Sockets>
 		</Spec>
 	</Tree>
@@ -480,10 +480,10 @@ Flask Effect does not Queue
 	</Items>
 	<Config>
 		<Input name="conditionLeeching" boolean="true"/>
-		<Input name="minionsUseFrenzyCharges" boolean="true"/>
 		<Input name="conditionEnemyBurning" boolean="true"/>
 		<Input name="feedingFrenzyFeedingFrenzyActive" boolean="true"/>
-		<Input name="playerHasLessArmourAndBlock" string="HIGH"/>
 		<Input name="raiseSpectreEnableCurses" boolean="true"/>
+		<Input name="playerHasLessArmourAndBlock" string="HIGH"/>
+		<Input name="minionsUseFrenzyCharges" boolean="true"/>
 	</Config>
 </PathOfBuilding>
